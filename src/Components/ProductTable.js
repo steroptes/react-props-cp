@@ -2,7 +2,6 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import PropTypes from 'prop-types';
-import { table } from "react-bootstrap";
 
 function ProductTable(props) {
   return (
@@ -33,9 +32,9 @@ function ProductTable(props) {
   );
 }
 
-ProductTable.prototype = {
-name: PropTypes.string.isRequired,
-category: PropTypes.string.isRequired,
-price: PropTypes.number.isRequired
-}
+ProductTable.propTypes = {
+  name: PropTypes.string.isRequired,
+  category: PropTypes.string.isRequired,
+  price: PropTypes.number.isRequired,
+};
 export default ProductTable;
