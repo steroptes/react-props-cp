@@ -40,6 +40,5 @@ ProductTable.propTypes = {
       price: PropTypes.number
     })
   ),
-  
 };
 export default ProductTable;
