@@ -33,8 +33,13 @@ function ProductTable(props) {
 }
 
 ProductTable.propTypes = {
-  name: PropTypes.string.isRequired,
-  category: PropTypes.string.isRequired,
-  price: PropTypes.number.isRequired,
+  productList: PropTypes.arrayOf(
+    PropTypes.exact({
+      name: PropTypes.string.isRequired,
+      category: PropTypes.string.isRequired,
+      price: PropTypes.number
+    })
+  ),
+  
 };
 export default ProductTable;

@@ -4,9 +4,10 @@ import './index.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ProductTable from './Components/ProductTable.js'
+import PropTypes from "prop-types";
 let products = [
       {
-        name :'Product 1', 
+        name :156, 
         category : 'Electronics', 
         price : 128.600,
       },
@@ -21,6 +22,8 @@ let products = [
         price : 928.200,
       },
   ];
+
+  
 
 ReactDOM.render(
   <React.StrictMode>
